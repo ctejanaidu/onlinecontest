@@ -1,30 +1,109 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>BestContestEver</title>
-    <meta charset="utf-8">
-    <meta name="author" content="kapeesh-kaul, ctejanaidu">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <nav>
-        <label class="logo">BestContestEver</label>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Leaderboard</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="heading">
-      <span class="title1" >BestContestEver</span>
-      <span class="title2">For those who are up for a Challenge</span>
-      <button class="register">Sign up Now!</button>
-    </div>
-    <div class="footer">
-      <p>[ ] with ❤ by kapeesh-kaul & ctejanaidu</p>
-    </div>
-  </body>
-</html>
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html , body{
+  height: 100%;
+}
+nav{
+  height: 80px;
+  width: 100%;
+}
+.logo{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  font-family: big john;
+  padding: 0 50px;
+  font-weight: 100;
+}
+nav ul{
+  float: right;
+  font-family: sans-serif;
+  margin-right: 80px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  font-weight: 100;
+  padding: 7px 13px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  transition: color .5s, background-color .5s, border .5s, border-color .5s;
+}
+a:hover{
+  color: #0c0129;
+  background-color: white;
+  border: 1px solid white;
+  border-color: white;
+  transition: color .5s, background-color .5s, border .5s, border-color .5s;
+}
+body{
+  background-color: #0c0129;
+  background-image: url("images/background.jpg");
+  background-position: center;
+  background-size:cover;
+  background-blend-mode: soft-light;
+}
+.heading{
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+.title1{
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 60pt;
+  font-family: big john;
+  font-weight: 100;
+}
+.title2{
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  font-family: serif;
+}
+.register{
+  margin: 50px auto;
+  display:  block;
+  width: 180px;
+  height: 50px;
+  border: 3px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+
+  transition: background-color 1000ms, colour 1000ms
+}
+.register:hover{
+  background-color: rgba(255, 255, 255, 1);
+  color: #222;
+  cursor: pointer;
+  transition: background-color 1000ms, colour 1000ms
+}
+.footer{
+  background-color: grey;
+  color: rgba(0,0,0,1);
+  text-align: center;
+  margin-top: 900px;
+  font-family: sans-serif;
+  padding: 10px;
+}
